@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
+  <link rel="pingback" href="https://1web.vn/xmlrpc.php" />
+  <title>MedIQ</title>
+  <meta name="description"
+    content="“MedIQ - Hộp y tế thông minh ứng dụng nền tảng IOT và hệ thống AppMobile” là một sản phẩm được tạo ra với mục tiêu hỗ trợ các bệnh nhân trong việc theo dõi kết quả khám bệnh, giúp các bác sĩ trong việc quản lý thông tin bệnh nhân và thăm khám sức khỏe định kỳ với tiêu chí nhanh gọn - di động - giá thành hợp lý. " />
+  <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js"
+    integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="./js/chart.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <!-- <a href="https://fb.me/gia.bach.116/" target="_blank"> <img src="pic/icon-chat.png" class="icon-chat-facebook"> </a> -->
+  <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+  <script type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+
+  <script src="./js/chatbot.js" defer></script>
+<script defer src="main.js"></script></head>
+
+<body data-rsssl=1
+  class="home page-template page-template-templates page-template-page-new-home page-template-templatespage-new-home-php page page-id-77039">
+  <div class="outer">
+    <div class="wrap-header d-none d-lg-block">
+      <div class="top-info text-right">
+        <div class="container ">
+          <div class="d-flex" style="justify-content: flex-end;">
+            <p class=" info2 ml-3 mb-0"><img src="pic/icon-2.svg"><span class="b600 text-white pl-2">096 3396 306</span>
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="wrap-menu">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="index.html"> <img
+                src="pic/rsz_2logo.png" class="logo-top"></a> <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="menu-menu-1-container">
+                <ul id="menu-menu-1" class="main-menu navbar-nav ml-auto">
+                  <li id="menu-item-947"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-947">
+                    <a href="#tab1" class="active js">Trang chủ</a>
+                  </li>
+                  <li id="menu-item-955"
+                    class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-955">
+                    <a class="js" href="#tab2">Giới thiệu</a>
+
+                  </li>
+                  <li id="menu-item-1111"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1111">
+                    <a class="js" href="#tab3">Các chỉ số đo</a>
+
+                  </li>
+                  <li id="menu-item-1106"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1106">
+                    <a class="js" href="#tab4">Tin tức</a>
+                  </li>
+                  <li id="menu-item-1103"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1103">
+                    <a class="js" href="#tab5">Liên hệ</a>
+                  </li>
+                  <li id="menu-item-1105"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1103">
+                    <a href="register.html">Đăng nhập</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile d-block d-lg-none">
+      <div class="button_container unactive" id="toggle"> <span class="top"></span> <span class="middle"></span> <span
+          class="bottom"></span></div>
+      <div class="mobile-logo"> <a class="navbar-brand" href="index.html"> <img src="./pic/rsz_2logo.png"
+            class="logo-top"></a></div>
+      <div class="menu-menu-1-container">
+        <ul id="menu-menu-2" class="mobile-menu navbar-nav ml-auto">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-947"><a
+              href="#tab1" class="active js">Trang chủ</a>
+          </li>
+          <li
+            class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-955">
+            <a href="#tab2" class="js">Giới thiệu</a>
+          </li>
+
+          <li id="menu-item-1111"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1111"><a
+              href="#tab3" class="js">Các chỉ số đo</a>
+          <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1111">
+            <a href="#tab4" class="js">Tin tức</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1106"><a
+              href="#tab5" class="js">Liên hệ</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1106"><a
+            href="#tab6" class="js">Đăng nhập</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="tab1" class="tab-pane active">
+    <div class="wrap-banner loop owl-carousel owl-theme owl-loaded owl-drag">
+      <img src="pic/doc05.jpg" alt="">
+      <img src="pic/doc02.jpg" alt="">
+      <img src="pic/doc03.jpg" alt="">
+      <img src="pic/doc04.jpg" alt="">
+      <img src="pic/doc01.jpg" alt="">
+      <!-- <img src="pic/doc00.png" alt="">       -->
+    </div>
+    <div class="section-1">
+      <div class="container">
+        <div class="content">
+          <div data-toggle="modal" data-target="#exampleModal" class="item item-1"> <img class="normal"
+              src="pic/icon-3.svg"> <img class="active" src="pic/icon-3-active.svg" class="active"> <span
+              class="pl-3">Câu hỏi nghiên cứu</span></div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content"> <button class="modal-close modal-toggle " data-dismiss="modal"
+                  aria-label="Close">X</button>
+                <div class="modal-body">
+                  <h2 class="modal-title">Câu hỏi nghiên cứu</h2>
+                  <p> Trong đề tài này, chúng em nghiên cứu về câu hỏi:</p>
+
+                  <p> <span> Thiết kế thiết bị như thế nào để hỗ trợ bệnh nhân theo dõi được sức khỏe thông qua các chỉ
+                      số: Nhiệt độ, nhịp tim, SPO2, huyết áp,…?</span> <span class="text-right"></span></p>
+                  <p> <span class="text-left"> Làm thế nào để quá trình đo, các chỉ số tự động cập nhật lên “hồ sơ cá
+                      nhân” trên webserver của từng người sử dụng với mục đích theo dõi và đưa ra những dự báo phù hợp
+                      với sức khỏe người dùng?</span></p>
+                  <p> <span class="text-left">Có thể tạo ra được hệ thống web lưu trữ các chỉ số sức khỏe của nhiều bệnh
+                      nhân, tạo thành các hồ sơ cá nhân, giúp bác sĩ có thể chăm sóc từ xa được nhiều người một lúc một
+                      cách dễ dàng không?
+                    </span> </p>
+                  <p> <span class="text-left">- Nghiên cứu ưu điểm, nhược điểm của các máy, thiết bị, đo chỉ số nhịp
+                      tim, huyết áp, nồng độ oxy trong máu, thân nhiệt cơ thể có trên thị trường. </span> </p>
+                  <p> <span class="text-left">- Nghiên cứu tính năng, ứng dụng của Module NodeMCU, các cảm biến đo các
+                      chỉ số: nhịp tim, nồng độ oxy trong máu, thân nhiệt cơ thể, huyết áp
+                    </span></p>
+                  <div class="contact"> <a href="tel: (+84)963396306"><img src="pic/phone.png"> (+84) 96 3396 306 </a>
+                    <span> Mọi thông tin chi tiết xin liên lạc với tác giả - Lê Gia Bách </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-toggle="modal" data-target="#exampleModal3" class="item item-3"> <img class="normal"
+              src="pic/icon-5.svg"> <img class="active" src="pic/icon-5-active.svg" class="active"> <span
+              class="pl-3">Kết quả mong đợi</span></div>
+          <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content"> <button class="modal-close modal-toggle " data-dismiss="modal"
+                  aria-label="Close">X</button>
+                <div class="modal-body">
+                  <h2 class="modal-title"> Kết quả mong đợi</h2>
+                  <p>- Chế tạo được thiết bị hỗ trợ đo các chỉ số sức khỏe tại gia.
+                  </p>
+                  <span>
+                    <p>- Sản phẩm nhỏ gọn, tiện dụng, giá thành rẻ, dễ dàng thử nghiệm và áp dụng vào thực tiễn. </p>
+                  </span>
+                  <span>
+                    <p>- Website dễ dàng thao tác, giao diện thân thiện với người dùng</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-toggle="modal" data-target="#exampleModal4" class="item item-4"> <img class="normal"
+              src="pic/icon-6.svg"> <img class="active" src="pic/icon-6-active.svg" class="active"> <span class="pl-3">
+              Thắc mắc xin liên hệ </span></div>
+          <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modal-add"> <button class="modal-close modal-toggle " data-dismiss="modal"
+                  aria-label="Close">X</button>
+                <div class="modal-body">
+                  <h2 class="modal-title"> Thắc mắc xin liên hệ</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item-add d-flex"> <img src="pic/map.png">
+                        <p class="text-bold"> <b>Lê Gia Bách - Chuyên Tin khóa 2124 </b><br> THPT chuyên Hà Nội
+                          Amsterdam, quận Cầu Giấy, Hà Nội</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item item-2"> <a href="mailto:giabachand@gmail.com" target="_blank"> <img class="normal"
+                src="pic/icon-4.svg"> <img class="active" src="pic/icon-4-active.svg" class="active"> <span
+                class="pl-3"> Hòm thư góp ý </span> </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="">
+              <h1 class="fs36 b600 text-uppercase"> Hộp Y Tế </br>MedIQ</h1>
+              <p> Là sản phẩm được tạo ra với mục tiêu hỗ trợ các bệnh nhân trong việc theo dõi kết quả khám bệnh, giúp
+                các bác sĩ trong việc quản lý thông tin bệnh nhân và thăm khám sức khỏe định kỳ với tiêu chí nhanh gọn -
+                di động - giá thành hợp lý.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="wrap-dichvu loop owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs01.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs01.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"><span
+                    class="mb-1 fs18 green-link">Tiện lợi</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs02.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs02.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Nhanh chóng</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs03.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs03.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Dễ dàng</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs04.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs04.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">24/7</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs05.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs05.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Đo sức khoẻ tại nhà</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs06.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs06.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">So sánh chỉ số sức khoẻ</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs07.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs07.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Người nhà thuận tiện kiểm tra</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs08.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs08.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Tiện lợi</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs09.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs09.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Nhanh chóng</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs10.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs10.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">Theo dõi</span> </a></div>
+              </div>
+              <div class="pl-1 pr-1">
+                <div class="ovh">
+                  <picture>
+                    <source class="owl-lazy" media="(max-width: 768px)" data-srcset="pic/bs11.jpg"> <img
+                      class="owl-lazy" data-src="pic/bs11.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="d-flex aic mt-3 service-link"> <img src="pic/icon-9.svg" style="width: 28px;"> <span
+                    class="mb-1 fs18 green-link">IoT</span> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="fs36 b600 text-white text-uppercase mb-5"> Tổng quan sản phẩm</h2>
+            <div class="blog-1">
+              <div class="d1 d-flex aic">
+                <div class="d-flex" style="margin-left: 35px;"> <img src="pic/icon-10.svg">
+                  <div class="pl-3">
+                    <p class="fs30 b600 text-white mb-0 funfacts" id="num1" style="line-height: 45px;" max="19"
+                      time="2">4</p>
+                    <p class="mb-0 text-white fs16"> Cảm biến (sensors)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d2 d-flex aic">
+                <div class="d-flex" style="margin-left: 35px;"> <img src="pic/icon-12.svg">
+                  <div class="pl-3">
+                    <p class="fs30 b600 text-white mb-0 funfacts" max="206" time="3" style="line-height: 45px;">IoT</p>
+                    <p class="mb-0 text-white fs16">Nền tảng Internet of Things</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d3 d-flex aic">
+                <div class="d-flex" style="margin-left: 35px;"> <img src="pic/icon-13.svg">
+                  <div class="pl-3">
+                    <p class="fs30 b600 text-white mb-0 " style="line-height: 45px;"><span>Quản lý</span></p>
+                    <p class="mb-0 text-white fs16">Lưu trữ và quản lý thông tin</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d4 d-flex aic">
+                <div class="d-flex" style="margin-left: 35px;"> <img src="pic/icon-14.svg">
+                  <div class="pl-3">
+                    <p class="fs30 b600 text-white mb-0 funfacts" max="7" time="2" style="line-height: 45px;">Biểu đồ
+                    </p>
+                    <p class="mb-0 text-white fs16">Thuận tiện theo dõi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog-2">
+              <p class="text-white text-justify mb-4"> MedIQ giúp bệnh nhân tự theo dõi sức khỏe tại nhà.
+                Bệnh nhân có thể dễ dàng theo dõi các chỉ số sức khỏe hàng ngày, nhận thông báo khi có dấu hiệu bất
+                thường, và lưu trữ lịch sử chỉ số đo để theo dõi sự tiến triển và cung cấp thông tin chính xác cho bác
+                sĩ.</p>
+              <div class="d-flex wrap-doctor" style="align-items: flex-end;">
+                <img style="max-width: 200px" src="pic/bsi.jpg">
+                <div class="pl-3">
+                  <div style="border-bottom: 1px solid #FFFFFF;">
+                    <p class="fs18 text-uppercase b600 text-white mb-0"> BSCKI. Phùng Thị Tuyết Phiêu</p>
+                    <p class="text-white">Bệnh viện Đa khoa Quốc tế Vinmec Phú Quốc</p>
+                  </div>
+                  <div class="d-flex mt-3" style="align-items: flex-start;"> <img src="pic/icon-15.svg">
+                    <p class="mb-0 pl-3 text-white text-justify"> Sức khỏe là vốn quý nhất của mỗi người, "phòng bệnh
+                      hơn chữa bệnh", do đó khám sức khỏe định kỳ là việc nên được ưu tiên.
+                      Cơ thể bạn giống như một cỗ máy hoạt động không ngừng nghỉ, cũng có lúc cần phải được bảo dưỡng
+                      mới có thể duy trì một trạng thái khỏe mạnh về thể chất và tinh thần dài lâu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="section-4">
+      <div class="container">
+        <div class="d-flex jcs aic pb-2 w-100" style="border-bottom: 1px solid #2F4857;">
+          <p class="fs36 b600 text-uppercase ls2 mb-0"> tin tức hoạt động</p>
+          <p class="mb-0"> <a class="more js" href="#tab4">Xem thêm</a></p>
+        </div>
+        <div id="tab-1" class="tab-content current">
+          <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/tin-tuc/hoat-dong-benh-vien/tam-quan-trong-cua-kham-suc-khoe-dinh-ky/"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20190416_105457_103658_kham-suc-khoe.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/tin-tuc/hoat-dong-benh-vien/tam-quan-trong-cua-kham-suc-khoe-dinh-ky/"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">Tầm quan trọng của khám Sức khỏe định kỳ?</p>
+              </a>
+              <p class="fs14 text-justify">Bạn có biết, ngay cả khi bạn thấy dường như hoàn toàn khỏe mạnh, điều đó
+                không có nguy cơ mắc căn bệnh nào đó ? ...</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/song-khoe/5-van-de-suc-khoe-canh-bao-ban-khong-con-qua-tre/?link_type=related_posts"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20211127_090409_604379_suc-khoe-suy-giam-1.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/song-khoe/5-van-de-suc-khoe-canh-bao-ban-khong-con-qua-tre/?link_type=related_posts"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">5 vấn đề sức khỏe cảnh báo bạn không còn quá trẻ
+                </p>
+              </a>
+              <p class="fs14 text-justify">Thời gian, tuổi tác thường tỉ lệ nghịch với sức khỏe và mức độ lão hóa của
+                con người. Càng ngày, chúng ta càng cảm thấy độ dẻo dai và khả năng vận động suy giảm....</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/tim-mach/thong-tin-suc-khoe/canh-giac-benh-huyet-ap-cao-o-do-tuoi-trung-nien/?link_type=related_posts"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20200225_084646_068685_huyet-ap-cao-dan-de.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/tim-mach/thong-tin-suc-khoe/canh-giac-benh-huyet-ap-cao-o-do-tuoi-trung-nien/?link_type=related_posts"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">Cảnh giác bệnh huyết áp cao ở độ tuổi trung niên
+                </p>
+              </a>
+              <p class="fs14 text-justify">Bệnh huyết áp cao là một trong những bệnh lý khá phổ biến ngày nay, đặc biệt
+                là với những người ở độ tuổi trung niên. Bệnh huyết áp cao ở tuổi trung niên có rất nhiều nguyên nhân
+                khác...</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/tim-mach/thong-tin-suc-khoe/suot-cuoc-doi-tim-dap-khoang-hai-nghin-ty-lan/?link_type=related_posts"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20210309_092251_127250_trai-tim-khoe.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/tim-mach/thong-tin-suc-khoe/suot-cuoc-doi-tim-dap-khoang-hai-nghin-ty-lan/?link_type=related_posts"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">Suốt cuộc đời, tim đập khoảng hai nghìn tỷ lần!</p>
+              </a>
+              <p class="fs14 text-justify">Trong cuộc đời, trung bình trái tim của mỗi người đập khoảng hai nghìn tỷ
+                lần. Đối với người lớn, mỗi phút trái tim đập trung bình từ 60-100 nhịp. Khi trái tim đập...</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/co-xuong-khop/suc-khoe-thuong-thuc/11-meo-dinh-duong-dung-cach-de-ho-tro-khop/?link_type=related_posts"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20211111_101751_713731_dinh-duong-cho-xuon.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/co-xuong-khop/suc-khoe-thuong-thuc/11-meo-dinh-duong-dung-cach-de-ho-tro-khop/?link_type=related_posts"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">11 mẹo dinh dưỡng đúng cách để hỗ trợ khớp</p>
+              </a>
+              <p class="fs14 text-justify">Những thay đổi nhỏ trong thói quen ăn uống có thể tác động rất lớn đến sức
+                khỏe và tinh thần của con người. Vì vậy nếu bệnh nhân biết cách áp dụng các mẹo...</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="ovh"> <a
+                  href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/ban-nen-lam-gi-khi-buoc-sang-do-tuoi-50-nhung-dieu-tuoi-50-can-biet/?link_type=related_posts"
+                  target="_blank"> <img
+                    data-src="https://vinmec-prod.s3.amazonaws.com/images/20211115_035015_324823_tuoi-50-can-bo-sung.max-1800x1800.jpg"
+                    class="img-zoom lazy"> </a></div>
+              <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/suc-khoe-tong-quat/ban-nen-lam-gi-khi-buoc-sang-do-tuoi-50-nhung-dieu-tuoi-50-can-biet/?link_type=related_posts"
+                target="_blank">
+                <p class="b600 fs18 mt-3 mb-2 green-link link-hover">Bạn nên làm gì khi bước sang độ tuổi 50? Những điều
+                  tuổi 50 cần biết</p>
+              </a>
+              <p class="fs14 text-justify">Duy trì hoạt động thể chất và tinh thần sẽ giúp bạn có một sức khỏe tốt hơn,
+                trẻ trung hơn, đặc biệt là khi bạn bước sang độ tuổi 50 - thời điểm những dấu hiệu ...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div id="tab2" class="tab-pane">
+    <h1 class="page-title" style="color:#2F4857">MedIQ- Hộp y tế thông minh ứng dụng nền tảng IOT và hệ thống AppMobile
+    </h1>
+    <div class="section text-center">
+      <div class="container"> <img
+          src="https://www.hfh.com.vn/sites/default/files/styles/ser555x341/public/Services/ICU_service_02.jpg?itok=SeDzrw5W">
+      </div>
+    </div>
+    <div class="section">
+      <div class="container content-1">
+        <p class="description">
+        <h5>Thông qua việc sử dụng công nghệ IoT (Internet of Things), sản phẩm tích hợp những tính năng vượt trội: <br>
+          </h>
+          <h6>Sản phẩm có khả năng theo dõi sức khỏe của bệnh nhân và cung cấp dữ liệu cho bác sĩ để đánh giá và theo
+            dõi sức khỏe. </h6>
+          <h6>Webserver có khả năng <b>ghi nhớ lịch sử</b> bệnh án của bệnh nhân, giúp cho việc chẩn đoán và điều trị
+            bệnh tốt hơn. </h6>
+          <h6>Theo dõi sức khỏe <b>tại nhà</b>, giúp bệnh nhân tiết kiệm thời gian và chi phí di chuyển đến các phòng
+            khám.</h6>
+          <h6>Thiết bị bao gồm các chức năng: đo các chỉ số sức khoẻ như nhịp tim, nồng độ oxi trong máu, thân nhiệt,
+            huyết áp, đếm số giọt truyền dịch </h6>
+          <h6>Tạo ra một <b> hệ thống webserver</b> đóng vai trò quản lý dữ liệu người bệnh và đưa ra những nhận xét về
+            tình hình sức khoẻ hiện tại của bệnh nhân.</h6>
+          <h6>Hộp thiết bị <b>tích hợp</b> ngăn chứa thuốc cũng như vật tư y tế cần thiết cho việc sơ cứu.</h6>
+          <br>
+          <h4>Với độ nhỏ gọn, tiện dụng, giá thành rẻ, dễ dàng thử nghiệm và áp dụng vào thực tiễn,
+            <br>
+            <h4>Đề tài mang ý nghĩa rất lớn trong việc nâng cao chất lượng chăm sóc sức khỏe cho người dân, đồng thời
+              giúp giảm thiểu thời gian, chi phí cho các quá trình thăm khám và điều trị.</h4>
+            <h4> Điều này giúp cho nhiều người có thể được chẩn đoán và điều trị sớm, giảm thiểu tình trạng bệnh lý
+              nghiêm trọng và đem lại lợi ích cho cộng đồng.</h4>
+            </p>
+      </div>
+    </div>
+  </div>
+  <div id="tab3" class="tab-pane">
+
+    <div id="logined">
+      <h2>Chỉ số cảm biến hiện tại</h2>
+      <div id="indexLevel">
+        <div id="levelBar" style="grid-area: level">
+          <p>Thấp</p>
+          <div id="theLevel">
+            <div title="Thấp ở mức nguy hiểm"></div>
+            <div title="Tối ưu"></div>
+            <div title="Bình thường"></div>
+            <div title="Cao"></div>
+            <div title="Rất cao"></div>
+            <div title="Cao ở mức rất nguy hiểm"></div>
+          </div>
+          <p>Cao</p>
+        </div>
+      </div>
+
+
+      <div id="indexData">
+        <div id="health" title="Chỉ số cơ thể">
+          <div id="bloodPressure" style="grid-area: a">
+            <a href="#bloodPressureChartArea">
+              <div>
+                <div>
+                  <span class="material-symbols-outlined">
+                    blood_pressure
+                  </span>
+                  <h3>Huyết áp:</h3>
+                </div>
+                <div>
+                  <div id="systolicValue">120</div>
+                  <p>/</p>
+                  <div id="diastolicValue">90</div>
+                  <p>mmHg</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="dropSpeed" style="grid-area: e">
+            <a>
+              <div>
+                <div>
+                  <span class="material-symbols-outlined"> speed </span>
+                  <h3>Tốc độ nhỏ giọt:</h3>
+                </div>
+                <div>
+                  <div id="dropSpeedValue">60</div>
+                  <p>giọt/phút</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="heartRate" style="grid-area: b">
+            <a href="#heartRateChartArea">
+              <div>
+                <div>
+                  <span class="material-symbols-outlined">
+                    health_metrics
+                  </span>
+                  <h3>Nhịp tim:</h3>
+                </div>
+                <div>
+                  <div id="heartRateValue">80</div>
+                  <p>bpm</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="SPO2" style="grid-area: c" title="Chỉ spO2 có giá trị càng cao càng tốt">
+            <a href="#SPO2ChartArea">
+              <div>
+                <div>
+                  <span class="material-symbols-outlined"> SPO2 </span>
+                  <h3>SPO2:</h3>
+                </div>
+                <div>
+                  <div id="SPO2Value">89</div>
+                  <p>%</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="skinTemp" style="grid-area: d">
+            <a href="#skinTempChartArea">
+              <div>
+                <div>
+                  <span class="material-symbols-outlined">
+                    thermometer
+                  </span>
+                  <h3>Nhiệt độ da:</h3>
+                </div>
+                <div>
+                  <div id="skinTempValue">39</div>
+                  <p>°C</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- detail -->
+      <h2>Biểu đồ chỉ số chi tiết</h2>
+    </div>
+
+
+    <!-- CHART -->
+    <!-- bloodPressure chart -->
+    <div id="bloodPressureChartArea" class="area">
+      <h3>Huyết áp</h3>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="bloodPressureChart"></canvas>
+    </div>
+
+    <!-- bpm chart -->
+    <div id="heartRateChartArea" class="area">
+      <h3>Nhịp tim</h3>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="heartChart"></canvas>
+    </div>
+
+    <!-- SPO2 chart -->
+    <div id="SPO2ChartArea" class="area">
+      <h3>SPO2</h3>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="SPO2cChart"></canvas>
+    </div>
+
+    <!-- temp chart -->
+    <div id="skinTempChartArea" class="area">
+      <h3>Nhiệt độ bề mặt da</h3>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="tempChart"></canvas>
+    </div>
+  </div>
+  <div id="tab4" class="tab-pane">
+    <p></p>
+  </div>
+  <div id="tab5" class="tab-pane">
+    <div class="content-page service-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="page-title">Liên hệ</h1>
+            <div class="page-simple">
+              <h4><strong><span style="color: #008000;"> Giáo viên hướng dẫn</span></strong></h4>
+              <h5>Ms. Lê Thị Thuý</h5>
+              <h5>Email: lethithuy111191@gmail.com</h5>
+              <h5>Tel: 0383328779</h5>
+              <br>
+              <h4><strong><span style="color: #008000;">Thông tin thí sinh</span></strong></h4>
+              <h5><span style="color: #000000;">Lê Gia Bách</span></h5>
+              <h5><span style="color: #000000;">Email: giabachand@gmail.com</span></h5>
+              <h5><span style="color: #000000;">Tel: 0963396306</span></h5>
+              <br>
+              <h5><span style="color: #000000;">Nguyễn Hoàng Dũng</span></h5>
+              <h5><span style="color: #000000;">Email: hoangdung.bubu@gmail.com</span></h5>
+              <h5><span style="color: #000000;">Tel: 0968580080</span></h5>
+              <h5>&nbsp;</h5>
+              <h5>&nbsp;</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sidebar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Tổng quan</h6>
+          <p class="text-justify"><i>MedIQ - Hộp y tế thông minh ứng dụng nền tảng IOT và hệ thống AppMobile </i>là một
+            sản phẩm được tạo ra với mục tiêu hỗ trợ các bệnh nhân trong việc theo dõi kết quả khám bệnh, giúp các bác
+            sĩ
+            trong việc quản lý thông tin bệnh nhân và thăm khám sức khỏe định kỳ với tiêu chí nhanh gọn - di động - giá
+            thành hợp lý.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Nền tảng</h6>
+          <ul class="footer-links">
+            <li><a href="http://google.com">Arduino</a></li>
+            <li><a href="http://google.com">Boostrap</a></li>
+            <li><a href="http://google.com">Chart js</a></li>
+            <!-- <li><a href="http://google.com">MongoDB</a></li> -->
+            <li><a href="http://google.com">Socket io</a></li>
+            <li><a href="http://google.com">Express js</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#tab2">Giới thiệu</a></li>
+            <li><a href="#tab5">Liên hệ</a></li>
+            <li><a href="http://google.com">Contribute</a></li>
+            <li><a href="http://google.com">Privacy Policy</a></li>
+            <li><a href="http://google.com">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+            <a href="#">giabach1106</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+<script type="text/javascript">
+  $(function () {
+
+    $(".wrap-banner").owlCarousel({
+      center: false,
+      items: 1,
+      loop: true,
+      nav: true,
+      autoplay: true,
+      autoHeight: false,
+      lazyLoad: false,
+      dots: true,
+      responsive: {
+        0: {
+          nav: false
+        },
+        992: {
+          nav: true
+        }
+      }
+
+    });
+
+    var slide_dichvu = jQuery(".wrap-dichvu");
+    slide_dichvu.owlCarousel({
+      center: true,
+      items: 3,
+      loop: true,
+      nav: true,
+      autoplay: false,
+      lazyLoad: true,
+      autoHeight: true,
+      smartSpeed: 500,
+    });
+
+    $('.list-partner').owlCarousel({
+      nav: true,
+      loop: true,
+      dots: false,
+      margin: 10,
+      lazyLoad: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        480: {
+          items: 2
+        },
+        768: {
+          items: 6
+        }
+      }
+    });
+    $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > 50) {
+        $('.wrap-menu').addClass('sticky');
+        $('.header-mobile').addClass('sticky');
+      } else {
+        $('.wrap-menu').removeClass('sticky');
+        $('.header-mobile').removeClass('sticky');
+      }
+    });
+
+
+
+    $('.lazy').Lazy();
+
+    $('ul.tabs li').click(function () {
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs li').removeClass('current');
+      $('.tab-content').removeClass('current');
+
+      $(this).addClass('current');
+      $("#" + tab_id).addClass('current');
+    });
+  })
+</script>
+<script type="text/javascript">
+  $(function () {
+    $('.button_container').click(function () {
+      $(this).toggleClass('active');
+      $('.mobile-menu').slideToggle();
+    });
+
+    $('.mobile-menu li .sub-menu').prepend('<span  class="submenu-button"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></span>');
+    $('.submenu-button').siblings().hide();
+    $('.submenu-button').click(function () {
+      $(this).siblings().slideToggle();
+      $(this).toggleClass('active');
+      $('.mobile-menu li .sub-menu').toggleClass('active');
+
+    });
+  })
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+  const socket = io('', { query: 'clientType=web' });
+
+  const skinTempInfo = document.getElementById("skinTempValue");
+  const heartInfo = document.getElementById("heartRateValue");
+  const SPO2Info = document.getElementById("SPO2Value");
+  const dropSpeedInfo = document.getElementById("dropSpeedValue");
+  const systolicInfo = document.getElementById("systolicValue");
+  const diastolicInfo = document.getElementById("diastolicValue");
+
+  //nhan tin nhan ve suc khoe
+  socket.on("message_suckhoe", (data) => {
+    if (data.notify == 1) {
+      alert("Cảnh báo: Bệnh nhân cần được chăm sóc");
+    }
+    console.log(data);
+
+    if (data.temp != 0) {
+      setData(tempData.datasets[0].data, data.temp);
+      skinTempInfo.innerHTML = data.temp;
+    }
+    if (data.heart != 0) {
+      setData(heartData.datasets[0].data, data.heart);
+      heartInfo.innerHTML = data.heart;
+    }
+    if (data.spo2 != 0) {
+      setData(SPO2.datasets[0].data, data.spo2);
+      SPO2Info.innerHTML = data.spo2;
+    }
+
+
+
+    tempChart.update();
+    heartChart.update();
+    SPO2Chart.update();
+  });
+
+  //nhan tin nhan huyet ap va dem giot
+  socket.on("message_huyetap", (data) => {
+    console.log(data);
+
+    if (data.tocdonhogiot != 0) {
+      dropSpeedInfo.innerHTML = data.tocdonhogiot;
+    }
+    if (data.sys != 0) {
+      systolicInfo.innerHTML = data.sys;
+      setData(bloodPressureChart.data.datasets[0].data, data.sys);
+    }
+    if (data.dia != 0) {
+      diastolicInfo.innerHTML = data.dia;
+      setData(bloodPressureChart.data.datasets[1].data, data.dia);
+    }
+
+    bloodPressureChart.update();
+
+  });
+</script>
+
+<!-- chart -->
+<script>
+  var ctx_temp = document.getElementById("tempChart").getContext("2d");
+  var ctx_heart = document.getElementById("heartChart").getContext("2d");
+  var ctx_SPO2 = document.getElementById("SPO2cChart").getContext("2d");
+  var ctx_bloodPressure = document.getElementById("bloodPressureChart").getContext("2d");
+
+  var bloodPressureData = {
+    labels: [
+      60, 58, 56, 54, 52, 50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28,
+      26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0,
+    ],
+    datasets: [
+      {
+        label: "Huyết áp tâm thu (mmHg)",
+        data: [180, 166, 145, 140, 122, 124, 117],
+        borderColor: "red",
+        borderWidth: 1,
+        pointBorderWidth: 3,
+        tension: 0.1,
+      },
+      {
+        label: "Huyết áp tâm trương (mmHg)",
+        data: [110, 118, 100, 94, 80, 82, 75],
+        borderColor: "blue",
+        borderWidth: 1,
+        pointBorderWidth: 3,
+        tension: 0.1,
+      },
+    ],
+  };
+  let systolicDataValue = bloodPressureData.datasets[0].data[bloodPressureData.datasets[0].data.length - 1];
+  let diastolicDataValue = bloodPressureData.datasets[1].data[bloodPressureData.datasets[1].data.length - 1];
+
+  var tempData = {
+    labels: [
+      60, 58, 56, 54, 52, 50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28,
+      26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0,
+    ],
+    datasets: [
+      {
+        label: "Nhiệt độ bề mặt da (°C)",
+        data: [1, 0, 31, 10, 50, 30, 36, 38, 38.2, 34, 39, 37.8],
+        borderColor: "#4152A3",
+        borderWidth: 1,
+        pointBorderWidth: 3,
+        tension: 0.1,
+      },
+    ],
+  };
+  let tempDataValue =
+    tempData.datasets[0].data[tempData.datasets[0].data.length - 1];
+
+  var heartData = {
+    labels: [
+      60, 58, 56, 54, 52, 50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28,
+      26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0,
+    ],
+    datasets: [
+      {
+        label: "Nhịp tim (lần/phút)",
+        data: [80, 69, 120, 70, 50, 60, 66],
+        borderWidth: 1,
+        pointBorderWidth: 3,
+        borderColor: "#4152A3",
+        tension: 0.1,
+      },
+    ],
+  };
+  let heartDataValue =
+    heartData.datasets[0].data[heartData.datasets[0].data.length - 1];
+
+  var SPO2 = {
+    labels: [
+      60, 58, 56, 54, 52, 50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28,
+      26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0,
+    ],
+    datasets: [
+      {
+        label: "Nồng độ Oxy trong máu (%)",
+        data: [100, 80, 99, 98, 92],
+        borderWidth: 1,
+        pointBorderWidth: 3,
+        borderColor: "#4152A3",
+        tension: 0.1,
+      },
+    ],
+  };
+  let SP02DataValue =
+    SPO2.datasets[0].data[SPO2.datasets[0].data.length - 1];
+
+  var tempOption = {
+    // responsive: false,
+    y: {
+      suggestedMin: 35,
+      suggestedMax: 42,
+    },
+  };
+  var heartOption = {
+    // responsive: false,
+    y: {
+      suggestedMin: 50,
+      suggestedMax: 120,
+    },
+  };
+  var SPO2Option = {
+    // responsive: false,
+    y: {
+      suggestedMin: 80,
+      suggestedMax: 100,
+    },
+  };
+
+  var tempChart = new Chart(ctx_temp, {
+    type: "line",
+    data: tempData,
+    options: tempOption,
+  });
+
+  var heartChart = new Chart(ctx_heart, {
+    type: "line",
+    data: heartData,
+    options: heartOption,
+  });
+
+  var SPO2Chart = new Chart(ctx_SPO2, {
+    type: "line",
+    data: SPO2,
+    options: SPO2Option,
+  });
+  var bloodPressureChart = new Chart(ctx_bloodPressure, {
+    type: "line",
+    data: bloodPressureData,
+    options: tempOption,
+  });
+
+  function setData(dataset, data) {
+    dataset.push(data);
+    dataset.shift();
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+  // get data to show in Index
+  document.querySelector("#skinTempValue").innerHTML = tempDataValue;
+  document.querySelector("#heartRateValue").innerHTML = heartDataValue;
+  document.querySelector("#SPO2Value").innerHTML = SP02DataValue;
+  document.querySelector("#systolicValue").innerHTML = systolicDataValue;
+  document.querySelector("#diastolicValue").innerHTML = diastolicDataValue;
+  // chage the color due the value
+
+  // temp
+  if (tempDataValue >= 40) {
+    document.querySelector("#skinTemp").style.backgroundColor = "#bf0000";
+    document.querySelector("#skinTemp").style.color = "white";
+  } else if (tempDataValue >= 39) {
+    document.querySelector("#skinTemp").style.backgroundColor = "#f53131";
+    document.querySelector("#skinTemp").style.color = "black";
+  } else if (tempDataValue >= 38) {
+    document.querySelector("#skinTemp").style.backgroundColor = "#f06969";
+    document.querySelector("#skinTemp").style.color = "black";
+  } else if (tempDataValue >= 37.5) {
+    document.querySelector("#skinTemp").style.backgroundColor = "#ffbf00";
+    document.querySelector("#skinTemp").style.color = "black";
+  } else if (tempDataValue >= 36) {
+    document.querySelector("#skinTemp").style.backgroundColor = "#34b257";
+    document.querySelector("#skinTemp").style.color = "black";
+  } else {
+    document.querySelector("#skinTemp").style.backgroundColor = "#3c096c";
+    document.querySelector("#skinTemp").style.color = "white";
+  }
+
+  // heart
+  if (heartDataValue >= 100) {
+    document.querySelector("#heartRate").style.backgroundColor = "#bf0000";
+    document.querySelector("#heartRate").style.color = "white";
+  } else if (heartDataValue >= 80) {
+    document.querySelector("#heartRate").style.backgroundColor = "#f53131";
+    document.querySelector("#heartRate").style.color = "black";
+  } else if (heartDataValue >= 68) {
+    document.querySelector("#heartRate").style.backgroundColor = "#f06969";
+    document.querySelector("#heartRate").style.color = "black";
+  } else if (heartDataValue >= 62) {
+    document.querySelector("#heartRate").style.backgroundColor = "#ffbf00";
+    document.querySelector("#heartRate").style.color = "black";
+  } else if (heartDataValue >= 54) {
+    document.querySelector("#heartRate").style.backgroundColor = "#34b257";
+    document.querySelector("#heartRate").style.color = "black";
+  } else {
+    document.querySelector("#heartRate").style.backgroundColor = "#3c096c";
+    document.querySelector("#heartRate").style.color = "white";
+  }
+
+  // SPO2
+  if (SP02DataValue <= 88) {
+    document.querySelector("#SPO2").style.backgroundColor = "#bf0000";
+    document.querySelector("#SPO2").style.color = "white";
+  } else if (SP02DataValue <= 92) {
+    document.querySelector("#SPO2").style.backgroundColor = "#f53131";
+    document.querySelector("#SPO2").style.color = "black";
+  } else if (SP02DataValue <= 95) {
+    document.querySelector("#SPO2").style.backgroundColor = "#ffbf00";
+    document.querySelector("#SPO2").style.color = "black";
+  } else if (SP02DataValue <= 100) {
+    document.querySelector("#SPO2").style.backgroundColor = "#34b257";
+    document.querySelector("#SPO2").style.color = "black";
+  } else {
+    document.querySelector("#SPO2").style.backgroundColor = "#3c096c";
+    document.querySelector("#SPO2").style.color = "white";
+    document.querySelector("#SPO2Num").innerHTML = "N/A";
+  }
+
+  // blood pressure
+  if (systolicDataValue - diastolicDataValue <= 20) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#bf0000";
+    document.querySelector("#bloodPressure").style.color = "white";
+  } else if (systolicDataValue >= 180 || diastolicDataValue >= 110) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#f53131";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue >= 160 || diastolicDataValue >= 100) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#f06969";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue >= 140 || diastolicDataValue >= 90) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#ffbf00";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue >= 130 || diastolicDataValue >= 85) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#B6BA00";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue >= 120 || diastolicDataValue >= 80) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#4E8B00";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue >= 90 || diastolicDataValue >= 60) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#34B257";
+    document.querySelector("#bloodPressure").style.color = "black";
+  } else if (systolicDataValue < 90 || diastolicDataValue < 60) {
+    document.querySelector("#bloodPressure").style.backgroundColor =
+      "#3c096c";
+    document.querySelector("#bloodPressure").style.color = "white";
+  }
+</script>
